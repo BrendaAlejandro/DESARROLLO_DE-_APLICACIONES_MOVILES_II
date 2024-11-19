@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7A4ECD12CECC35000966ADC /* MeaisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A4ECD02CECC35000966ADC /* MeaisAppApp.swift */; };
+		B7A4ECD32CECC35000966ADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A4ECD22CECC35000966ADC /* ContentView.swift */; };
+		B7A4ECD52CECC35100966ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A4ECD42CECC35100966ADC /* Assets.xcassets */; };
+		B7A4ECD82CECC35100966ADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A4ECD72CECC35100966ADC /* Preview Assets.xcassets */; };
+		B7A4ECE52CECC47600966ADC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A4ECE42CECC47600966ADC /* APIResponse.swift */; };
+		B7A4ECE92CECC7E500966ADC /* CategoriaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A4ECE82CECC7E500966ADC /* CategoriaListViewModel.swift */; };
+		B7A4ECEC2CECCD6D00966ADC /* CategoriaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A4ECEB2CECCD6D00966ADC /* CategoriaListView.swift */; };
+		B7D5B3842CECD5780062F469 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5B3832CECD5780062F469 /* HttpRequestHelper.swift */; };
+		B7D5B3862CECDCFB0062F469 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5B3852CECDCFB0062F469 /* CategoryService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7A4ECCD2CECC35000966ADC /* MeaisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeaisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A4ECD02CECC35000966ADC /* MeaisAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaisAppApp.swift; sourceTree = "<group>"; };
+		B7A4ECD22CECC35000966ADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7A4ECD42CECC35100966ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7A4ECD72CECC35100966ADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7A4ECE42CECC47600966ADC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		B7A4ECE82CECC7E500966ADC /* CategoriaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaListViewModel.swift; sourceTree = "<group>"; };
+		B7A4ECEB2CECCD6D00966ADC /* CategoriaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaListView.swift; sourceTree = "<group>"; };
+		B7D5B3832CECD5780062F469 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		B7D5B3852CECDCFB0062F469 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7A4ECCA2CECC35000966ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7A4ECC42CECC35000966ADC = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECCF2CECC35000966ADC /* MeaisApp */,
+				B7A4ECCE2CECC35000966ADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7A4ECCE2CECC35000966ADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECCD2CECC35000966ADC /* MeaisApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7A4ECCF2CECC35000966ADC /* MeaisApp */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECE12CECC3FF00966ADC /* Services */,
+				B7A4ECE32CECC41B00966ADC /* ViewModels */,
+				B7A4ECDF2CECC3F100966ADC /* View */,
+				B7A4ECE02CECC3F700966ADC /* Models */,
+				B7A4ECE22CECC40B00966ADC /* Helpers */,
+				B7A4ECD02CECC35000966ADC /* MeaisAppApp.swift */,
+				B7A4ECD22CECC35000966ADC /* ContentView.swift */,
+				B7A4ECD42CECC35100966ADC /* Assets.xcassets */,
+				B7A4ECD62CECC35100966ADC /* Preview Content */,
+			);
+			path = MeaisApp;
+			sourceTree = "<group>";
+		};
+		B7A4ECD62CECC35100966ADC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECD72CECC35100966ADC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7A4ECDF2CECC3F100966ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECEB2CECCD6D00966ADC /* CategoriaListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7A4ECE02CECC3F700966ADC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECE42CECC47600966ADC /* APIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7A4ECE12CECC3FF00966ADC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5B3852CECDCFB0062F469 /* CategoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B7A4ECE22CECC40B00966ADC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5B3832CECD5780062F469 /* HttpRequestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7A4ECE32CECC41B00966ADC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4ECE82CECC7E500966ADC /* CategoriaListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7A4ECCC2CECC35000966ADC /* MeaisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A4ECDB2CECC35100966ADC /* Build configuration list for PBXNativeTarget "MeaisApp" */;
+			buildPhases = (
+				B7A4ECC92CECC35000966ADC /* Sources */,
+				B7A4ECCA2CECC35000966ADC /* Frameworks */,
+				B7A4ECCB2CECC35000966ADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeaisApp;
+			productName = MeaisApp;
+			productReference = B7A4ECCD2CECC35000966ADC /* MeaisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7A4ECC52CECC35000966ADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B7A4ECCC2CECC35000966ADC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B7A4ECC82CECC35000966ADC /* Build configuration list for PBXProject "MeaisApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7A4ECC42CECC35000966ADC;
+			productRefGroup = B7A4ECCE2CECC35000966ADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7A4ECCC2CECC35000966ADC /* MeaisApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7A4ECCB2CECC35000966ADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A4ECD82CECC35100966ADC /* Preview Assets.xcassets in Resources */,
+				B7A4ECD52CECC35100966ADC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7A4ECC92CECC35000966ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A4ECD32CECC35000966ADC /* ContentView.swift in Sources */,
+				B7D5B3842CECD5780062F469 /* HttpRequestHelper.swift in Sources */,
+				B7A4ECE92CECC7E500966ADC /* CategoriaListViewModel.swift in Sources */,
+				B7D5B3862CECDCFB0062F469 /* CategoryService.swift in Sources */,
+				B7A4ECD12CECC35000966ADC /* MeaisAppApp.swift in Sources */,
+				B7A4ECE52CECC47600966ADC /* APIResponse.swift in Sources */,
+				B7A4ECEC2CECCD6D00966ADC /* CategoriaListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7A4ECD92CECC35100966ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7A4ECDA2CECC35100966ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7A4ECDC2CECC35100966ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeaisApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.MeaisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7A4ECDD2CECC35100966ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeaisApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.MeaisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7A4ECC82CECC35000966ADC /* Build configuration list for PBXProject "MeaisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A4ECD92CECC35100966ADC /* Debug */,
+				B7A4ECDA2CECC35100966ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A4ECDB2CECC35100966ADC /* Build configuration list for PBXNativeTarget "MeaisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A4ECDC2CECC35100966ADC /* Debug */,
+				B7A4ECDD2CECC35100966ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7A4ECC52CECC35000966ADC /* Project object */;
+}
