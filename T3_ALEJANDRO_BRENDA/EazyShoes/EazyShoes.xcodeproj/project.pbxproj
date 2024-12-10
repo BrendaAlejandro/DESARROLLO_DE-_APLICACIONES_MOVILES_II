@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B71812072D08A38600A75F85 /* EazyShoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812062D08A38600A75F85 /* EazyShoesApp.swift */; };
+		B71812092D08A38600A75F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812082D08A38600A75F85 /* ContentView.swift */; };
+		B718120B2D08A38700A75F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B718120A2D08A38700A75F85 /* Assets.xcassets */; };
+		B718120E2D08A38700A75F85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B718120D2D08A38700A75F85 /* Preview Assets.xcassets */; };
+		B71812102D08A38700A75F85 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718120F2D08A38700A75F85 /* Persistence.swift */; };
+		B71812132D08A38700A75F85 /* EazyShoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B71812112D08A38700A75F85 /* EazyShoes.xcdatamodeld */; };
+		B718121B2D08A48500A75F85 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718121A2D08A48500A75F85 /* HttpRequestHelper.swift */; };
+		B718121E2D08A49C00A75F85 /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718121D2D08A49C00A75F85 /* ShoesService.swift */; };
+		B71812222D08A4C200A75F85 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812212D08A4C200A75F85 /* HomeView.swift */; };
+		B71812242D08A4CD00A75F85 /* ShoesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812232D08A4CD00A75F85 /* ShoesListView.swift */; };
+		B71812262D08A4D900A75F85 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812252D08A4D900A75F85 /* FavoritesListView.swift */; };
+		B71812292D08A4F400A75F85 /* ShoesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71812282D08A4F400A75F85 /* ShoesListViewModel.swift */; };
+		B718122E2D08A51E00A75F85 /* GenderShoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718122D2D08A51E00A75F85 /* GenderShoes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B71812032D08A38600A75F85 /* EazyShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71812062D08A38600A75F85 /* EazyShoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EazyShoesApp.swift; sourceTree = "<group>"; };
+		B71812082D08A38600A75F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B718120A2D08A38700A75F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B718120D2D08A38700A75F85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B718120F2D08A38700A75F85 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B71812122D08A38700A75F85 /* EazyShoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EazyShoes.xcdatamodel; sourceTree = "<group>"; };
+		B718121A2D08A48500A75F85 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		B718121D2D08A49C00A75F85 /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
+		B71812212D08A4C200A75F85 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B71812232D08A4CD00A75F85 /* ShoesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesListView.swift; sourceTree = "<group>"; };
+		B71812252D08A4D900A75F85 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
+		B71812282D08A4F400A75F85 /* ShoesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesListViewModel.swift; sourceTree = "<group>"; };
+		B718122D2D08A51E00A75F85 /* GenderShoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderShoes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B71812002D08A38600A75F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B71811FA2D08A38600A75F85 = {
+			isa = PBXGroup;
+			children = (
+				B71812052D08A38600A75F85 /* EazyShoes */,
+				B71812042D08A38600A75F85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B71812042D08A38600A75F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B71812032D08A38600A75F85 /* EazyShoes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B71812052D08A38600A75F85 /* EazyShoes */ = {
+			isa = PBXGroup;
+			children = (
+				B718122C2D08A51000A75F85 /* GenModels */,
+				B71812272D08A4E300A75F85 /* ViewModels */,
+				B71812202D08A4B500A75F85 /* Views */,
+				B718121C2D08A48E00A75F85 /* Service */,
+				B71812192D08A45A00A75F85 /* Helpers */,
+				B71812062D08A38600A75F85 /* EazyShoesApp.swift */,
+				B71812082D08A38600A75F85 /* ContentView.swift */,
+				B718120A2D08A38700A75F85 /* Assets.xcassets */,
+				B718120F2D08A38700A75F85 /* Persistence.swift */,
+				B71812112D08A38700A75F85 /* EazyShoes.xcdatamodeld */,
+				B718120C2D08A38700A75F85 /* Preview Content */,
+			);
+			path = EazyShoes;
+			sourceTree = "<group>";
+		};
+		B718120C2D08A38700A75F85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B718120D2D08A38700A75F85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B71812192D08A45A00A75F85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B718121A2D08A48500A75F85 /* HttpRequestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B718121C2D08A48E00A75F85 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B718121D2D08A49C00A75F85 /* ShoesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B71812202D08A4B500A75F85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B71812212D08A4C200A75F85 /* HomeView.swift */,
+				B71812232D08A4CD00A75F85 /* ShoesListView.swift */,
+				B71812252D08A4D900A75F85 /* FavoritesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B71812272D08A4E300A75F85 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B71812282D08A4F400A75F85 /* ShoesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B718122C2D08A51000A75F85 /* GenModels */ = {
+			isa = PBXGroup;
+			children = (
+				B718122D2D08A51E00A75F85 /* GenderShoes.swift */,
+			);
+			path = GenModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B71812022D08A38600A75F85 /* EazyShoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71812162D08A38700A75F85 /* Build configuration list for PBXNativeTarget "EazyShoes" */;
+			buildPhases = (
+				B71811FF2D08A38600A75F85 /* Sources */,
+				B71812002D08A38600A75F85 /* Frameworks */,
+				B71812012D08A38600A75F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EazyShoes;
+			productName = EazyShoes;
+			productReference = B71812032D08A38600A75F85 /* EazyShoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B71811FB2D08A38600A75F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B71812022D08A38600A75F85 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B71811FE2D08A38600A75F85 /* Build configuration list for PBXProject "EazyShoes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B71811FA2D08A38600A75F85;
+			productRefGroup = B71812042D08A38600A75F85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B71812022D08A38600A75F85 /* EazyShoes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B71812012D08A38600A75F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B718120E2D08A38700A75F85 /* Preview Assets.xcassets in Resources */,
+				B718120B2D08A38700A75F85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B71811FF2D08A38600A75F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B718121E2D08A49C00A75F85 /* ShoesService.swift in Sources */,
+				B718122E2D08A51E00A75F85 /* GenderShoes.swift in Sources */,
+				B71812222D08A4C200A75F85 /* HomeView.swift in Sources */,
+				B718121B2D08A48500A75F85 /* HttpRequestHelper.swift in Sources */,
+				B71812292D08A4F400A75F85 /* ShoesListViewModel.swift in Sources */,
+				B71812102D08A38700A75F85 /* Persistence.swift in Sources */,
+				B71812132D08A38700A75F85 /* EazyShoes.xcdatamodeld in Sources */,
+				B71812262D08A4D900A75F85 /* FavoritesListView.swift in Sources */,
+				B71812092D08A38600A75F85 /* ContentView.swift in Sources */,
+				B71812072D08A38600A75F85 /* EazyShoesApp.swift in Sources */,
+				B71812242D08A4CD00A75F85 /* ShoesListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B71812142D08A38700A75F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B71812152D08A38700A75F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B71812172D08A38700A75F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EazyShoes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.EazyShoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B71812182D08A38700A75F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EazyShoes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.cibertec.EazyShoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B71811FE2D08A38600A75F85 /* Build configuration list for PBXProject "EazyShoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71812142D08A38700A75F85 /* Debug */,
+				B71812152D08A38700A75F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71812162D08A38700A75F85 /* Build configuration list for PBXNativeTarget "EazyShoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71812172D08A38700A75F85 /* Debug */,
+				B71812182D08A38700A75F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B71812112D08A38700A75F85 /* EazyShoes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B71812122D08A38700A75F85 /* EazyShoes.xcdatamodel */,
+			);
+			currentVersion = B71812122D08A38700A75F85 /* EazyShoes.xcdatamodel */;
+			path = EazyShoes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B71811FB2D08A38600A75F85 /* Project object */;
+}
